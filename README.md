@@ -19,14 +19,7 @@ Team Members:
 
 Description :
 
-Developing Countries is the area of the globe where land-based, in situ monitoring of weather and climate is at its scarcest, but at the same time has arguably the most potential to benefit society
-Rainfall and temperature can have high spatial variability due to the strong feedback that can exist between the land and atmosphere. Temperature can change rapidly in space due to land-cover heterogeneity and changing altitude over complex mountainous terrain. This means that a weather station tens of kilometers away may measure conditions that have little relevance to your location, making it hard to make informed local decisions.
-
-Attempts can be made to supplement weather information with satellite data, but these infer rainfall and near surface temperature at spatially averaged scales exceeding 10km and are subject to considerable uncertainties despite advances in sensor technology; moreover some data such as near surface winds or solar flux are not available at all.
-
-Local weather information can have a huge impact on communities and applications enabled by granular weather data include agriculture, change in prices of commodities and early warning systems.
-
-TinyML is a new technology that allows Machine Learning (ML) models to run on low-power microcontrollers that do not require a network infrastructure. We believe that TinyML has a great role to play not only to reach the SDGs, but also to facilitate scientific research in areas such as environmental monitoring, physics of complex systems and energy management.
+This Ripo contain a dataset, Report, code, PPT and Demo  on activities of team “AI 4 Africa” towards the TinyML Challenge 2022 on building a Smart Weather Station. The team collected a total 7,800 secs of audio recordings from Kogi state in Nigeria over a two month period. These recordings were collected using an android smartphone. MFCC was extracted from the audio recordings which was used to train three ML models, a Support Vector Regression, a Deep Neural Network (DNN) and a CNN model. The models were tested on different splits. Two minute chunks were shown to be most accurate, with the DNN model showing the lowest MAPE of  44.47%. The model was pruned and quantized for onward deployment on an ESP32 board. The model did not show a loss in performance due to theTFLite conversion. The size of the final model is just about 3.82kB which is suitable for deployment on most common microcontrollers. This validates the approach proposed for prediction of rainfall in low resource settings.
 
 Repository Description:
 
